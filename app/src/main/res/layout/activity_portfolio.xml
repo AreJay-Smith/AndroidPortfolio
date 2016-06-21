@@ -8,6 +8,11 @@
     android:fitsSystemWindows="true"
     tools:context="com.arejaysmith.myappportfolio.PortfolioActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +27,17 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,56 +48,44 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Nanodegree Apps!"/>
+            android:text="@string/nanodegree_apps"/>
 
         <Button
             android:id="@+id/popular_movies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Popular Movies"/>
+            style="@style/GeneralButton"
+            android:text="@string/Popular"/>
 
         <Button
             android:id="@+id/stock_hawk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Stock Hawk"/>
+            style="@style/GeneralButton"
+            android:text="@string/StockHawk"/>
 
         <Button
             android:id="@+id/build_it_bigger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Build It Bigger"/>
+            style="@style/GeneralButton"
+            android:text="@string/Bigger"/>
 
         <Button
             android:id="@+id/material"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Make Your App Material"/>
+            style="@style/GeneralButton"
+            android:text="@string/Material"/>
 
         <Button
             android:id="@+id/go_ubiquitous"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Go Ubiquitous"/>
+            style="@style/GeneralButton"
+            android:text="@string/Ubiquitous"/>
 
         <Button
             android:id="@+id/capstone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="200dp"
-            android:layout_margin="10dp"
-            android:text="Capstone"/>
+            style="@style/GeneralButton"
+            android:text="@string/Capstone"/>
 
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
 
     </LinearLayout>
 
